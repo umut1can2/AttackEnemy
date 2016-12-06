@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+#include "structs.h"
 #include "Player.h"
 #include "Enemy.h"
 
@@ -8,9 +8,11 @@
 #define _W_HIT_ 50
 #define _E_HIT_ 70
 
+
+
 using namespace std;
-const string monsterName = "Groot";
 int menu(Player &player,Enemy &enemy){
+    string monsterName = enemy.getEnemyName();
     char modeType;
     cout << "\nYapabileceklerin\nQ'yu kullan<q>\nW'yu kullan<w>\nE'yi kullan<e>\nSecimin<q-w-e>:";
     cin >> modeType;
@@ -30,7 +32,7 @@ int menu(Player &player,Enemy &enemy){
             cout << "Verdigin Hasar Yeterli Olmadi!!\n"<< monsterName << "'un Cani :" << enemy.getHealt() << endl;            cout << "Sira " << monsterName << "'ta!\nSana Saldırıyor ve " << enemyDamage << " hasar veriyor!\nSenin Canin : " << player.getHealt() << endl;
             if (player.live() == false)
             {
-                cout << "Groot Seni Hakladi!\n";
+                cout << monsterName <<" Seni Hakladi!\n";
                 return 0;
             }
             menu(player,enemy);
@@ -52,7 +54,7 @@ int menu(Player &player,Enemy &enemy){
             cout << "Verdigin Hasar Yeterli Olmadi!!\n"<< monsterName << "'un Cani :" << enemy.getHealt() << endl;            cout << "Sira " << monsterName << "'ta!\nSana Saldırıyor ve " << enemyDamage << " hasar veriyor!\nSenin Canin : " << player.getHealt() << endl;
             if (player.live() == false)
             {
-                cout << "Groot Seni Hakladi!\n";
+                cout << monsterName << " Seni Hakladi!\n";
                 return 0;
             }
             menu(player,enemy);
@@ -78,7 +80,7 @@ int menu(Player &player,Enemy &enemy){
 
             if (player.live() == false)
             {
-                cout << "Groot Seni Hakladi!\n";
+                cout << monsterName << " Seni Hakladi!\n";
                 return 0;
             }
             menu(player,enemy);
@@ -92,8 +94,10 @@ int menu(Player &player,Enemy &enemy){
 }
 
 int main() {
-    Player myPlayer(_Q_HIT_,_W_HIT_,_E_HIT_, false);
-    Enemy myEnemy(_ENEMY_HEALT_);
+    Grott boo;
+    Player myPlayer(boo.qHit,boo.wHit,boo.eHit, true);
+    Enemy myEnemy(boo.healt,boo.name);
+    string monsterName = boo.name;
     cout << "Ormanin Karanliginda Ilerliyordun aniden onune kornuc bir " << monsterName << " cikti..\n\n";
     menu(myPlayer,myEnemy);
 

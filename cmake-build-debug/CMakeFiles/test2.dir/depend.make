@@ -10,4 +10,5 @@ CMakeFiles/test2.dir/Player.cpp.o: ../Player.h
 CMakeFiles/test2.dir/main.cpp.o: ../Enemy.h
 CMakeFiles/test2.dir/main.cpp.o: ../Player.h
 CMakeFiles/test2.dir/main.cpp.o: ../main.cpp
+CMakeFiles/test2.dir/main.cpp.o: ../structs.h
 

@@ -4,9 +4,10 @@
 
 #include "Enemy.h"
 
-Enemy::Enemy(int healt) {
+Enemy::Enemy(int healt,std::string enemyName) {
 
     this->healt = healt;
+    this->enemyName = enemyName;
 }
 
 void Enemy::gDamage(int dam) {
@@ -58,4 +59,8 @@ int Enemy::damageHard() {
 
 int Enemy::getLastDamage() {
     return lastDamage;
+}
+
+std::string Enemy::getEnemyName() {
+    return this->enemyName;
 }

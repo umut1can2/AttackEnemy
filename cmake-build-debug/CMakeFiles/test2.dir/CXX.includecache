@@ -15,6 +15,10 @@ stdlib.h
 -
 time.h
 -
+stdlib.h
+-
+string
+-
 
 /home/ticop/ClionProjects/test2/Player.cpp
 Player.h
@@ -31,10 +35,14 @@ time.h
 /home/ticop/ClionProjects/test2/main.cpp
 iostream
 -
-string
--
+structs.h
+/home/ticop/ClionProjects/test2/structs.h
 Player.h
 /home/ticop/ClionProjects/test2/Player.h
 Enemy.h
 /home/ticop/ClionProjects/test2/Enemy.h
+
+/home/ticop/ClionProjects/test2/structs.h
+string
+-
 
