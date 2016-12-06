@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/test2.dir/main.cpp.o CMakeFiles/test2.dir/Player.cpp.o CMakeFiles/test2.dir/Enemy.cpp.o  -o test2 -rdynamic 

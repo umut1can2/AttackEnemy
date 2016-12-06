@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ticop/ClionProjects/test2/Enemy.cpp
+Enemy.h
+/home/ticop/ClionProjects/test2/Enemy.h
+
+/home/ticop/ClionProjects/test2/Enemy.h
+stdlib.h
+-
+time.h
+-
+
+/home/ticop/ClionProjects/test2/Player.cpp
+Player.h
+/home/ticop/ClionProjects/test2/Player.h
+
+/home/ticop/ClionProjects/test2/Player.h
+string
+-
+stdlib.h
+-
+time.h
+-
+
+/home/ticop/ClionProjects/test2/main.cpp
+iostream
+-
+string
+-
+Player.h
+/home/ticop/ClionProjects/test2/Player.h
+Enemy.h
+/home/ticop/ClionProjects/test2/Enemy.h
+
