@@ -1,16 +1,25 @@
 #include <string>
 struct Grott{
-    int qHit = 30;
-    int wHit = 50;
-    int eHit = 45;
-    int healt = 50;
+    int healt = 100;
     std::string name = "Groot";
 };
 
 struct Boo{
-    int qHit = 30;
-    int wHit = 50;
-    int eHit = 45;
     int healt = 100;
     std::string name = "Boo";
+};
+
+struct Ramulan{
+    int healt = 100;
+    std::string name = "Ramulan";
+};
+
+struct Klingon{
+    int healt = 100;
+    std::string name = "Klingon";
+};
+
+struct Vulcan{
+    int healt = 100;
+    std::string name = "Vulcan";
 };

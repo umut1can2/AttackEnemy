@@ -16,4 +16,5 @@ public:
     int gDamage(int dam);
     int getHealt();
     bool live();
+    int cricticDamage(int useHealt);
 };

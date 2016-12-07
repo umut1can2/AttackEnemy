@@ -89,3 +89,27 @@ bool Player::live() {
         return false;
     }
 }
+
+int Player::cricticDamage(int useHealt) {
+    int cDamage=0;
+    int dmg = this->healt - useHealt;
+    if(dmg <= 0)
+    {
+        return 0;
+    }
+    if(dmg >= 1)
+    {
+        cDamage = rand() % useHealt + 30;
+        this->healt = this->healt - useHealt;
+    }
+    if (healt <= 0)
+    {
+        this->checkLive = false;
+        this->healt = 0;
+    }else if(healt >= 1)
+    {
+        this->checkLive = true;
+    }
+
+    return cDamage;
+}
